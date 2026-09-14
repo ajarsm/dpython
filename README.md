@@ -52,8 +52,10 @@ Write `hello.py`, run it, compile it, run the compiled file:
 
 What works where in this release: macOS has console programs, `input()`, native
 windows and widgets, copy/paste, drag and drop, files, sound and network; Linux has
-console programs, `input()`, files, sound and network (window host to come); Windows has
-console programs, files and network (`input()` and the window host to come). Each kit's
+console programs, `input()`, native windows and widgets, files, sound and network;
+Windows has console programs, native windows and widgets, files and network (`input()`
+to come). Native windows need a display; copy/paste and drag and drop with other
+applications are macOS-only for now. Each kit's
 README says the same and its `manifest.json` records what was checked.
 
 ## Downloads
@@ -63,8 +65,8 @@ Each release carries:
 | Archive | What it is |
 | --- | --- |
 | `dpython-<version>-macos-universal.zip` | the `dpython` compiler and command line and the `dbasic` window host, universal (Apple silicon and Intel), with compiled examples, docs and compatibility tables |
-| `dpython-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 (console programs today; window hosts to come) |
-| `dpython-<version>-windows-x64.zip` | the same kit for Windows x86-64 (console programs today; window hosts to come) |
+| `dpython-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 |
+| `dpython-<version>-windows-x64.zip` | the same kit for Windows x86-64 |
 | `dpython-<version>-wasm.zip` | the compiler and runtime as WebAssembly with the JavaScript loader, for embedding in your own site |
 
 Every archive has a `manifest.json` with the source commit and the SHA-256 of every
