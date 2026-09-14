@@ -62,8 +62,10 @@ README says the same and its `manifest.json` records what was checked.
 
 `dpython-0.1.0.vsix` on the [Releases](../../releases) page is a Visual Studio Code
 extension that shows the compiler's verdict on your program as you save — Pylance
-cannot know what d/Python refuses — and adds Check, Build, Run and Trace commands. Your
-Python extension keeps highlighting and IntelliSense; this one claims no language.
+cannot know what d/Python refuses — offers completion, hover and argument hints for every
+`dos.intent`, `dos.service` and `@dos.on` name straight from the compiler's registry, and
+adds Check, Build, Run and Trace commands. Your Python extension keeps highlighting and
+IntelliSense; this one claims no language.
 Install it from the file (Command Palette → **Extensions: Install from VSIX...**), then
 point `dpython.path` at the kit's `bin/dpython` (`bin\dpython.exe` on Windows) or put
 that `bin` on your `PATH`. One `.vsix` serves macOS, Windows and Linux.
