@@ -58,6 +58,16 @@ to come). Native windows need a display; copy/paste and drag and drop with other
 applications are macOS-only for now. Each kit's
 README says the same and its `manifest.json` records what was checked.
 
+## Editor support
+
+`dpython-0.1.0.vsix` on the [Releases](../../releases) page is a Visual Studio Code
+extension that shows the compiler's verdict on your program as you save — Pylance
+cannot know what d/Python refuses — and adds Check, Build, Run and Trace commands. Your
+Python extension keeps highlighting and IntelliSense; this one claims no language.
+Install it from the file (Command Palette → **Extensions: Install from VSIX...**), then
+point `dpython.path` at the kit's `bin/dpython` (`bin\dpython.exe` on Windows) or put
+that `bin` on your `PATH`. One `.vsix` serves macOS, Windows and Linux.
+
 ## Downloads
 
 Each release carries:
@@ -68,6 +78,7 @@ Each release carries:
 | `dpython-<version>-linux-x64.tar.gz` | the same kit for Linux x86-64 |
 | `dpython-<version>-windows-x64.zip` | the same kit for Windows x86-64 |
 | `dpython-<version>-wasm.zip` | the compiler and runtime as WebAssembly with the JavaScript loader, for embedding in your own site |
+| `dpython-<version>.vsix` | the Visual Studio Code extension, installed from the file; needs one of the kits above for its compiler |
 
 Every archive has a `manifest.json` with the source commit and the SHA-256 of every
 file, and the release notes list the SHA-256 of each archive.
